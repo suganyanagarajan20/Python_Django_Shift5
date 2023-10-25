@@ -1,10 +1,9 @@
 from django.contrib import admin
 
-from learning_log.models import Table1, Candidate, Candidate_account,Candidate_certification,Candidate_exp
+from learning_log.models import Candidate, Candidate_account,Candidate_certification,Candidate_exp
 from learning_log.models import Candidate_edu, Candidate_reference, job, Candidate_application,Candidate_Docs
 
 # Register your models here.
-admin.site.register(Table1)
 admin.site.register(Candidate)
 admin.site.register(Candidate_account)
 admin.site.register(Candidate_certification)

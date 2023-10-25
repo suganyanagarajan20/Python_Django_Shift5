@@ -2,11 +2,7 @@ from django.db import models
 from phonenumber_field.modelfields import PhoneNumberField
 from datetime import date
 
-# Create your models here.
-class Table1(models.Model):
-    name = models.CharField(max_length=25)
-    city = models.CharField(max_length=30)
-    
+# Create your models here.    
 
 # Candidate Table:   
 class Candidate(models.Model):
@@ -93,6 +89,9 @@ class job(models.Model):
     job_desc            = models.TextField(max_length=100, default=" ")
     job_role            = models.CharField(max_length=50, default=" ")
     job_options         = models.CharField(max_length=50, default=" ")
+    job_expiry_date     = models.DateField(null=True)
+    job_exp_of_emp      = models.IntegerField(default=0)
+    job_sal_expect      = models.CharField(max_length=50, default=" ")
 
 # Application table
 class Candidate_application(models.Model):

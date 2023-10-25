@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'learning_log',
-    'Entryhub_auth'
+    'Entryhub_auth',
+    'Entryhub_company'
 ]
 
 MIDDLEWARE = [
